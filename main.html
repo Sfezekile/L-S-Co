@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&S Co. | Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Img/L_S_Co_black_text_white_bg-removebg-preview.png" alt="L&S Co." class="logo">
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="btn btn-booking" id="nav-book-btn" type="button" onclick="document.getElementById('booking-modal').style.display='block'">Book Now</button>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="header__content">
+                <h1>WELCOME TO<br/><span>L&S CO.</span></h1> 
+                <p class="hero-subtitle">
+                    The fun is waiting for you! Enjoy fun-filled activities and memorable gatherings suitable for all ages.
+                </p>
+
+                <div class="copyright-bar"></div>
+
+
+                <div class="hero-cta">
+                    <button class="btn btn-primary" id="hero-book-btn" type="button" onclick="document.getElementById('booking-modal').style.display='block'">Book Your Dream Event</button>
+                    <a href="#gallery" class="btn btn-secondary" id="explore-btn">Explore Our Work</a>
+                </div>
+
+
+            </div>
+
+            <div class="header__image">
+                <div class="header__image__card header__image__card-1 animate-float">
+                    <span><i class="ri-basketball-line"></i></span>
+                    Fun Activities
+                </div>
+                <div class="header__image__card header__image__card-2 animate-float-delay">
+                    <span><i class="ri-restaurant-fill"></i></span>
+                    Delicious Food
+                </div>
+                <div class="header__image__card header__image__card-3 animate-float">
+                    <span><i class="ri-map-2-line"></i></span>
+                    Outdoor Picnic
+                </div>
+                <div class="header__image__card header__image__card-4 animate-float-delay">
+                    <span><i class="ri-music-line"></i></span>
+                    Good Vibes
+                </div>
+                <img src="Img/hero.png" alt="People connecting and having fun" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-me">
+                
+                    <h2 class="section-title">ABOUT US</h2>
+                    <div class="about-content">
+                        <p>L&S Co. is a Johannesburg-based event planner dedicated to bringing the ideas of its customers to life. From birthday parties to launches, we are determined to give you your perfect moment.</p>
+                        <p>Our team combines creativity, attention to detail, and a passion for celebrations to ensure every event is unique and memorable. Let us help you turn your vision into an extraordinary experience.</p>
+                        <p class="mission">Our mission is to use our resources and opportunities to create meaningful moments that positively impact everyone we work with.</p>
+                    </div>
+                <div>
+            </div>
+        </div>
+        <div class="container">    
+            <div class="about-me">
+                <div class="about-me-card">
+                    <h2 class="section-title">OUR VISION</h2>
+                    <div class="about-content">
+                        <p>Our vision is simple: Bring the creations of our minds to life and give everyone the chance to have their perfect moment.</p>
+                        <p>We believe every event should be a unique reflection of your dreams, and we are dedicated to making those dreams a reality for all our clients.</p>
+                        <p>At L&S Co., we strive to inspire joy, connection, and unforgettable memories through creative event design and meticulous planning. We see each event as an opportunity to celebrate individuality and foster meaningful experiences that last a lifetime.</p>
+                        <p>Our commitment is to approach every project with passion, innovation, and a personal touch—ensuring that your vision is not only realized, but elevated beyond your expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section 
+    <section id="about" class="about">
+        <h2>ABOUT US</h2>
+        <div class="about-content">
+            <p>L&S Co. is a Johannesburg-based event planner dedicated to bringing the ideas of its customers to life. From birthday parties to launches, we are determined to give you your perfect moment.</p>
+            <p>Our team combines creativity, attention to detail, and a passion for celebrations to ensure every event is unique and memorable. Let us help you turn your vision into an extraordinary experience.</p>
+            <p class="mission">Our mission is to use our resources and opportunities to create meaningful moments that positively impact everyone we work with.</p>
+        </div>
+    </section>
+
+    IAbout Me
+          
+    <section id="about" class="about__me">
+        <div id="about" class="about-me">
+            <h2>OUR VISION</h2>
+            <div class="about-content">
+                <p>Our vision is simple: Bring the creations of our minds to life and give everyone the chance to have their perfect moment.</p>
+                <p>We believe every event should be a unique reflection of your dreams, and we are dedicated to making those dreams a reality for all our clients.</p>
+                <p>At L&S Co., we strive to inspire joy, connection, and unforgettable memories through creative event design and meticulous planning. We see each event as an opportunity to celebrate individuality and foster meaningful experiences that last a lifetime.</p>
+                <p>Our commitment is to approach every project with passion, innovation, and a personal touch—ensuring that your vision is not only realized, but elevated beyond your expectations.</p>
+            </div>
+        </div>
+    </section>   -->     
+    
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">PAST EVENTS</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Img/Vibrant Party Ideas_ How to Throw a Colorful Outdoor Birthday Bash.jpeg" alt="Kids Birthday Event">
+                    <div class="gallery-overlay">
+                        <h3>Kids Birthday Event</h3>
+                        <p>Colorful and fun balloon arrangements</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Img/8 Retro Party Ideas_ Get the Time Machine Effect With Our Tips • The Naptime Reviewer.jpeg" alt="Celebration Event">
+                    <div class="gallery-overlay">
+                        <h3>Celebration Event</h3>
+                        <p>Elegant adult party decorations</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Img/40 BEST OUTDOOR GRADUATION PARTY IDEAS FOR GUYS - Anuris Journey.jpeg" alt="Birthday Event">
+                    <div class="gallery-overlay">
+                        <h3>Graduation Dinner</h3>
+                        <p>Cherry blossom themed setup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="banner">
+        <div class="banner-image" style="background-image: url('Img/Green\ Modern\ Corporate\ Personal\ Vlog\ YouTube\ Banner\ \(1\).png'); background-image: cover/no-repeat;">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <div class="social-links">
+                    <a href="https://instagram.com/l_and_s_cooo" target="_blank" class="social-link">
+                        <div class="social-icon">
+                            <i class="ri-instagram-fill"></i>
+                        </div>
+                        <span class="social-handle">@l_and_s_cooo</span>
+                    </a>
+                    <a href="https://tiktok.com/@l_and_s_cooo" target="_blank" class="social-link">
+                        <div class="social-icon">
+                            <i class="ri-tiktok-fill"></i>
+                        </div>
+                        <span class="social-handle">@l_and_s_cooo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="reviews" class="reviews-section" aria-labelledby="reviews-heading">
+        <div class="section-header">
+            <h2 id="reviews-heading">Client Testimonials</h2>
+            <p class="section-subtitle">Hear what our clients say about their experiences</p>
+        </div>
+
+        <div class="reviews-container">
+            <div class="reviews-slider" aria-live="polite">
+                <!-- Review 1 -->
+                <div class="review-card" tabindex="0">
+                    <div class="review-header">
+                        <div class="star-rating" aria-label="5 out of 5 stars">
+                            <span class="sr-only">5 out of 5 stars</span>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="review-date">May 2024</div>
+                    </div>
+                    <blockquote class="review-text">
+                        <p>"Absolutely incredible! L&S Co. turned my vision into reality and made my engagement party unforgettable. The team was professional, creative, and attentive to every detail. I can't recommend them enough!"</p>
+                    </blockquote>
+                    <div class="review-author">
+                        
+                        <div class="author-info">
+                            <h3 class="author-name">Sarah M.</h3>
+                            <p class="author-event">Engagement Party</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card" tabindex="0">
+                    <div class="review-header">
+                        <div class="star-rating" aria-label="5 out of 5 stars">
+                            <span class="sr-only">5 out of 5 stars</span>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="review-date">April 2024</div>
+                    </div>
+                    <blockquote class="review-text">
+                        <p>"From start to finish, the experience was seamless. The decorations were stunning and the staff went above and beyond to make my daughter's birthday magical. Thank you, L&S Co.!"</p>
+                    </blockquote>
+                    <div class="review-author">
+                        
+                        <div class="author-info">
+                            <h3 class="author-name">James K.</h3>
+                            <p class="author-event">Birthday Party</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card" tabindex="0">
+                    <div class="review-header">
+                        <div class="star-rating" aria-label="5 out of 5 stars">
+                            <span class="sr-only">5 out of 5 stars</span>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="review-date">March 2024</div>
+                    </div>
+                    <blockquote class="review-text">
+                        <p>"Our corporate event was a huge success thanks to L&S Co. The team was organized, friendly, and delivered exactly what we wanted. We received so many compliments from our guests!"</p>
+                    </blockquote>
+                    <div class="review-author">
+                        
+                        <div class="author-info">
+                            <h3 class="author-name">Priya S.</h3>
+                            <p class="author-event">Corporate Event</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card" tabindex="0">
+                    <div class="review-header">
+                        <div class="star-rating" aria-label="5 out of 5 stars">
+                            <span class="sr-only">5 out of 5 stars</span>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="review-date">February 2024</div>
+                    </div>
+                    <blockquote class="review-text">
+                        <p>"I was blown away by the creativity and dedication of the L&S Co. team. They made my baby shower so special and stress-free. I will definitely use their services again!"</p>
+                    </blockquote>
+                    <div class="review-author">
+                        
+                        <div class="author-info">
+                            <h3 class="author-name">Lebo T.</h3>
+                            <p class="author-event">Baby Shower</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="slider-prev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="slider-dots" role="tablist"></div>
+                <button class="slider-next" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('booking-modal').style.display='none'">&times;</span>
+            <h2>Book Your Dream Event</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="event-type">Event Type<span>*</span></label>
+                    <select id="event-type" name="event_type" required>
+                        <option value="">Select...</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="baby-shower">Baby Shower</option>
+                        <option value="proposal">Proposal</option>
+                        <option value="corporate">Corporate Event</option>
+                        <option value="birthday">Birthday Party</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Date<span>*</span></label>
+                    <input type="date" id="event-date" name="event_date" required>
+                </div>
+                <div class="form-group">
+                    <label for="start-time">Start Time<span>*</span></label>
+                    <input type="time" id="start-time" name="start_time" required>
+                </div>
+                <div class="form-group">
+                    <label for="end-time">End Time<span>*</span></label>
+                    <input type="time" id="end-time" name="end_time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guest-count">Guest Count<span>*</span></label>
+                    <input type="number" id="guest-count" name="guest_count" min="1" placeholder="50" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Full Name<span>*</span></label>
+                    <input type="text" id="client-name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="client-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone<span>*</span></label>
+                    <input type="tel" id="client-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Event Description<span>*</span></label>
+                    <textarea id="description" name="description" rows="4" placeholder="Tell us more about your event..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <span class="btn-text">Manifest My Event</span>
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p class="section-subtitle">We'd love to hear from you! Reach out for inquiries or collaborations.</p>
+        </div>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="contact-name" placeholder="Your name" required>
+                    <span class="input-icon"><i class="fas fa-user"></i></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="your.email@example.com" required>
+                    <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">Subject</label>
+                    <input type="text" id="contact-subject" name="contact-subject" placeholder="What's this about?">
+                    <span class="input-icon"><i class="fas fa-tag"></i></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="contact-message" rows="5" placeholder="Your message here..." required></textarea>
+                    <span class="input-icon"><i class="fas fa-comment"></i></span>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p class="contact-description">Have questions or want to discuss your next event? We're here to help!</p>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div>
+                            <p class="contact-label">Email us at</p>
+                            <a href="mailto:info@elevenelevenevents.com" class="contact-link">landsco.official@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <p class="contact-label">Call us at</p>
+                            <a href="tel:+1234567890" class="contact-link">+1 234 567 890</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <p class="contact-label">Follow us</p>
+                            <a href="https://instagram.com/l_and_s_cooo" target="_blank" class="contact-link">@l_and_s_cooo</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div>
+                            <p class="contact-label">Follow us</p>
+                            <a href="https://tiktok.com/@l_and_s_cooo" target="_blank" class="contact-link">@l_and_s_cooo</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-hours">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 10am - 5pm</p>
+                        <p>Saturday: 10am - 4pm</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="Img/L_S_Co_black_text_white_bg-removebg-preview.png" alt="L&S Co." class="footer-logo">
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:landsco.official@gmail.com">landsco.official@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Dream Avenue, NY</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#reviews">Testimonials</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Mission</h3>
+                    <p class="footer-tagline">"The more visions we make realities, the more dreams you can make."</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Eleven Eleven Events. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#">Terms of Service</a>
+                    <span>•</span>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Dream Event</h2>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form class="booking-form" id="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-type">Event Type *</label>
+                        <select id="event-type" name="eventType" required>
+                            <option value="">Select event type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="baby-shower">Baby Shower</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="proposal">Proposal</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date *</label>
+                        <input type="date" id="event-date" name="eventDate" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="start-time">Start Time *</label>
+                        <input type="time" id="start-time" name="startTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="end-time">End Time *</label>
+                        <input type="time" id="end-time" name="endTime" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-count">Guest Count *</label>
+                    <input type="number" id="guest-count" name="guestCount" placeholder="50" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="inspiration">Inspiration (Pinterest/Photos) *</label>
+                    <input type="text" id="inspiration" name="inspiration" placeholder="Share links or describe your vision..." required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="client-name">Full Name *</label>
+                        <input type="text" id="client-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client-email">Email *</label>
+                        <input type="email" id="client-email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-phone">Phone *</label>
+                    <input type="tel" id="client-phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="event-description">Event Description *</label>
+                    <textarea id="event-description" name="description" rows="4" placeholder="Tell us more about your dream event..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-booking btn-full">Manifest My Event</button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="Asset/css/review/review.js"></script>
+    <script src="Asset/Booking/JS/JSFile/main.js"></script>
+    <script src="Asset/Booking/JS/email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init('_m7xwbrp_m5xpeKHH'); // Your EmailJS user ID
+      })();
+    </script> 
+
+    <script src="Asset/Booking/JS/main.js"></script>
+
+</body>
+</html>
