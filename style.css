@@ -228,18 +228,19 @@ h3 {
     left: 0;
     right: 0;
     z-index: 1000;
-    transition: var(--transition-base);
+    background-color: var(--primary-accent);
+    transition: var(--primary-accent);
     padding: 8px 0;
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--primary-accent);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-soft);
 }
 
 .nav-link.scrolled {
-    color: var(--foreground);
+    color: var(--background);
 }
 
 .nav-container {
@@ -264,9 +265,9 @@ h3 {
 }
 
 .nav-link {
-    color: var(--foreground);
+    color: var(--background);
     font-weight: 500;
-    transition: var(--transition-base);
+    transition: var(--primary-accent);
     position: relative;
 }
 
@@ -356,8 +357,8 @@ nav {
 }
 
 .btn-booking {
-    background: var(--gradient-accent);
-    color: var(--foreground);
+    background: var(--gradient-hero);
+    color: var(--background);
     font-weight: 600;
     box-shadow: var(--shadow-soft);
 }
@@ -445,6 +446,7 @@ a {
     justify-content: center;
     background: linear-gradient(135deg, #fef1f8 0%, #ffebf5 100%);
     padding: 2rem;
+    margin-top: 40px;
     /*overflow: hidden;*/
 }
 
@@ -1463,6 +1465,12 @@ textarea:invalid {
     filter: brightness(0) invert(1);
 }
 
+.header-logo {
+    height: 4rem;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
 .footer-contact {
     display: flex;
     flex-direction: column;
@@ -1486,7 +1494,7 @@ textarea:invalid {
 }
 
 .contact-item a:hover {
-    color: var(--gold-accent);
+    color: var(--primary);
 }
 
 .footer-section h3 {
@@ -1506,7 +1514,7 @@ textarea:invalid {
 }
 
 .footer-links a:hover {
-    color: var(--gold-accent);
+    color: var(--primary);
 }
 
 .footer-tagline {
@@ -1537,7 +1545,7 @@ textarea:invalid {
 }
 
 .footer-legal a:hover {
-    color: var(--gold-accent);
+    color: var(--primary);
 }
 
 .footer-legal span {
