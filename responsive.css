@@ -109,6 +109,10 @@
         padding: 1rem 1.5rem;
     }
 
+    .header__image__card {
+        display: none;
+    }
+
     .hero-indicators {
         bottom: 1rem;
     }
@@ -342,7 +346,7 @@
 (min-resolution: 192dpi) {
 
     .nav-logo .logo,
-    .footer-logo {
+    .footer-logo, .header-logo {
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
     }
